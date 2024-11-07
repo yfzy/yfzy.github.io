@@ -1,0 +1,86 @@
+@import url("css2.css");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background-color: black;
+	color: white;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	height: 100vh;
+	overflow-x: hidden;
+	font-family: "Orbitron", sans-serif;
+}
+
+#bomb {
+	font-size: 80px;
+}
+
+#ambulance {
+	font-size: 80px;
+	transform: translateX(110vw);
+}
+
+.stopwatch-container {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	gap: 50px;
+}
+
+.time-display {
+	font-size: 3rem;
+	font-weight: bold;
+	margin-bottom: 0.5vh;
+	border: 10px solid white;
+	border-radius: 8px;
+}
+
+.buttons {
+	display: flex;
+	gap: 4px;
+}
+
+button {
+	width: 6rem;
+	height: 4rem;
+	font: inherit;
+	font-size: 1rem;
+	border-radius: 8px;
+	border: none;
+	cursor: pointer;
+}
+
+button:hover {
+	opacity: 0.7;
+}
+
+#alt-btns {
+	background-color: green;
+	color: white;
+}
+
+#reset-btn {
+	background-color: gray;
+	color: white;
+}
+
+.slideIn {
+	animation: slide-in 2s forwards;
+}
+
+@keyframes slide-in {
+	from {
+		transform: translateX(110vw);
+	}
+	to {
+		transform: translateX(0%);
+	}
+}
