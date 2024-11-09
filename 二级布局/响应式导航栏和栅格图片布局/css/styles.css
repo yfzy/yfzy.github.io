@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #333;
+    color: white;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .nav .menu {
+    list-style-type: none;
+  }
+  
+  .pc-menu li {
+    display: inline-block;
+    margin-left: 20px;
+  }
+  
+  .pc-menu li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+  }
+  
+  .pc-menu .dropdown {
+    position: relative;
+  }
+  
+  .pc-menu .dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #444;
+    top: 100%;
+    left: 0;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .pc-menu .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  
+  .pc-menu .dropdown-menu li a {
+    display: block;
+    padding: 10px;
+    color: white;
+  }
+  
+  .mobile-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .mobile-menu {
+    display: none;
+    list-style-type: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+  }
+  
+  .mobile-menu li {
+    border-top: 1px solid #444;
+  }
+  
+  .mobile-menu li a {
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .mobile-menu li a:hover {
+    background-color: #555;
+  }
+  
+  /* 栅格布局 */
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+  }
+  
+  .col {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .image-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease;
+  }
+  
+  .image-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.5s ease;
+  }
+  
+  .image-card p {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .image-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .image-card:hover img {
+    transform: scale(1.05);
+  }
+  
+  /* 定义12列栅格系统 */
+  .col-1 { flex: 0 0 8.33%; }
+  .col-2 { flex: 0 0 16.66%; }
+  .col-3 { flex: 0 0 25%; }
+  .col-4 { flex: 0 0 33.33%; }
+  .col-5 { flex: 0 0 41.66%; }
+  .col-6 { flex: 0 0 50%; }
+  .col-7 { flex: 0 0 58.33%; }
+  .col-8 { flex: 0 0 66.66%; }
+  .col-9 { flex: 0 0 75%; }
+  .col-10 { flex: 0 0 83.33%; }
+  .col-11 { flex: 0 0 91.66%; }
+  .col-12 { flex: 0 0 100%; }
+  
+  /* 响应式调整 */
+  @media (max-width: 768px) {
+    .pc-menu {
+      display: none;
+    }
+  
+    .mobile-menu-btn {
+      display: block;
+    }
+  
+    /* 图片栅格在移动端堆叠 */
+    .col {
+      flex: 0 0 100%;
+    }
+  }
+  

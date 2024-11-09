@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>响应式导航栏和栅格图片布局</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- 导航栏 -->
+  <header>
+    <div class="logo">我的网站</div>
+    <nav class="nav">
+      <ul class="menu pc-menu">
+        <li><a href="#home">首页</a></li>
+        <li class="dropdown">
+          <a href="#services" class="dropdown-toggle">服务</a>
+          <ul class="dropdown-menu">
+            <li><a href="#web-design">网页设计</a></li>
+            <li><a href="#seo">SEO 优化</a></li>
+            <li><a href="#marketing">市场推广</a></li>
+          </ul>
+        </li>
+        <li><a href="#about">关于我们</a></li>
+        <li><a href="#contact">联系我们</a></li>
+      </ul>
+
+      <!-- 移动端菜单按钮 -->
+      <button class="mobile-menu-btn" onclick="toggleMobileMenu()">☰</button>
+      <ul class="menu mobile-menu" id="mobile-menu">
+        <li><a href="#home">首页</a></li>
+        <li><a href="#services">服务</a></li>
+        <li><a href="#about">关于我们</a></li>
+        <li><a href="#contact">联系我们</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- 图片栅格布局 -->
+  <main>
+    <h1 style="text-align: center;">图片栅格布局</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col col-4">
+          <div class="image-card">
+            <img src="images/banner.jpg" alt="示例图片1">
+            <p>图片 1</p>
+          </div>
+        </div>
+        <div class="col col-4">
+          <div class="image-card">
+            <img src="images/banner.jpg" alt="示例图片2">
+            <p>图片 2</p>
+          </div>
+        </div>
+        <div class="col col-4">
+          <div class="image-card">
+            <img src="images/banner.jpg" alt="示例图片3">
+            <p>图片 3</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col col-6">
+          <div class="image-card">
+            <img src="images/banner.jpg" alt="示例图片4">
+            <p>图片 4</p>
+          </div>
+        </div>
+        <div class="col col-6">
+          <div class="image-card">
+            <img src="images/banner.jpg" alt="示例图片5">
+            <p>图片 5</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

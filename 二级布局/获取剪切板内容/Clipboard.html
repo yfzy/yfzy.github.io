@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>获取剪切板内容</title>
+    <style>
+        /* 为显示的文本和图片添加边框样式 */
+        #clipboardContent, #clipboardImage {
+            border: 2px solid #007BFF; /* 蓝色边框 */
+            padding: 10px;             /* 内边距 */
+            margin-top: 10px;          /* 上外边距 */
+            border-radius: 5px;        /* 圆角 */
+            max-width: 100%;           /* 最大宽度 */
+        }
+
+        #clipboardImage {
+            display: none;             /* 初始隐藏图片 */
+        }
+    </style>
+</head>
+<body>
+    <button id="pasteButton">粘贴剪切板内容</button>
+    <p id="clipboardContent">剪切板内容将显示在这里</p>
+    <img id="clipboardImage" alt="剪切板中的图片将显示在这里"/>
+
+    <script>
+        const pasteButton = document.getElementById("pasteButton");
+        const clipboardContent = document.getElementById("clipboardContent");
+        const clipboardImage = document.getElementById("clipboardImage");
+
+        pasteButton.addEventListener("click", async () => {
+            try {
+                // 尝试读取剪切板内容
+                const clipboardItems = await navigator.clipboard.read();
+                
+                // 遍历剪切板项目，找到图像类型
+                for (const item of clipboardItems) {
+                    // 检查是否包含 image/png 格式的图像
+                    if (item.types.includes("image/png")) {
+                        const blob = await item.getType("image/png");
+                        const imageUrl = URL.createObjectURL(blob);
+                        clipboardImage.src = imageUrl;
+                        clipboardImage.style.display = "block"; // 显示图片
+                        clipboardContent.innerText = "剪切板中包含图像：";
+                        return; // 退出循环，因为我们已经找到并展示了图像
+                    }
+                }
+
+                // 如果没有图像，尝试读取文本
+                const text = await navigator.clipboard.readText();
+                clipboardContent.innerText = `剪切板内容：${text}`;
+                clipboardImage.style.display = "none"; // 隐藏图片
+
+            } catch (error) {
+                clipboardContent.innerText = "无法访问剪切板内容，请检查权限。";
+                console.error("Error:", error);
+            }
+        });
+    </script>
+</body>
+</html>
