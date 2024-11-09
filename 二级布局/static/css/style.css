@@ -1,0 +1,176 @@
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+.product-entry .product-img {
+    display: block;
+    height: 350px;
+    margin-bottom: 20px;
+    position: relative;
+}
+.user-img, .thumb-img, .f-product-1, .f-product-2, .product-img, .intro-img, .amenities-img, .blog-img, .hotel-img {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+.text-center {
+    text-align: center;
+}
+body {
+    font-family: "Roboto", Arial, sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.7;
+    color: #595959;
+    background: #fff;
+
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857;
+    color: #333333;
+    background-color: #fff;
+}
+
+.row1 {
+    display: flex;
+}
+.colorlib-heading {
+    margin-bottom: 5em;
+}
+@media (min-width: 992px) {
+    .col-md-3 {
+        width: 25%;
+    }
+}
+@media (min-width: 992px) {
+    .col-md-offset-3 {
+        margin-left: 25%;
+    }
+}
+@media (min-width: 992px) {
+    .col-md-6 {
+        width: 50%;
+    }
+}
+@media (min-width: 992px) {
+    .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+        float: left;
+    }
+}
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.text-center {
+    text-align: center;
+}
+
+.product-entry .product-img .tag {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+p {
+    margin-bottom: 20px;
+    margin: 0 0 10px;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+.product-entry .product-img .tag .sale {
+    font-size: 11px;
+    background: #DD3E3E;
+    color: #fff;
+    padding: .3em .5em;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    border-radius: 2px;
+}
+.product-entry .product-img .tag .new {
+    font-size: 11px;
+    background: #FFC300;
+    color: #fff;
+    padding: .3em .5em;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    border-radius: 2px;
+}
+.product-entry .desc h3 {
+    text-transform: uppercase;
+    padding: 20px;
+    font-size: 16px;
+}
+h1, h2, h3, h4, h5, h6, figure {
+    color: #000;
+    font-family: "Roboto", Arial, sans-serif;
+    font-weight: 400;
+    margin: 0 0 20px 0;
+}
+.andy {
+    text-decoration: none;
+    padding: 10px 20px;    
+    font-size: 16px;
+    background-color: #3498db;
+    color: white;
+    border: 3px solid #3498db;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease, font-size 0s;  /* 字体缩放时的平滑过渡 */
+    display: inline-block; /* 防止布局改变 */
+}
+
+.andy:hover {
+   background-color: transparent;
+    color: #3498db;       
+    text-shadow: 0 0 5px #3498db;
+    box-shadow: 0 0 5px #3498db;
+    transform: scale(1.2);  /* 字体和按钮放大 1.2倍 */
+    font-size: 16px;  /* 固定字体大小，防止字体改变元素尺寸 */
+
+}
+
+/* 页面主体 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 2000px; /* 页面内容高度，足够让页面能够滚动 */
+}
+
+/* 置顶按钮的样式 */
+.scroll-to-top-btn {
+    position: fixed; /* 固定定位 */
+    bottom: 20px;    /* 距离页面底部 20px */
+    right: 20px;     /* 距离页面右边 20px */
+    background-color: #007bff; /* 按钮背景色 */
+    color: white;    /* 按钮文字颜色 */
+    border: none;    /* 去掉按钮的边框 */
+    border-radius: 50%; /* 圆形按钮 */
+    padding: 10px 15px;
+    font-size: 20px;  /* 设置字体大小 */
+    cursor: pointer; /* 鼠标指针变成手形 */
+    display: none;    /* 默认情况下隐藏按钮 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 添加阴影 */
+}
+
+.scroll-to-top-btn:hover {
+    background-color: #0056b3; /* 鼠标悬停时按钮变色 */
+}
