@@ -1,0 +1,577 @@
+html,
+input,
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+    width: 100%;
+    height: 100%;
+
+}
+
+.shoubu {
+    width: 1920px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.shoubu>.bangxin1 {
+    width: 1185px;
+    height: 76px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fubangxin1 {
+    width: 1185px;
+    height: 76px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.shoubu .bangxin1a1 {
+    width: 215px;
+    height: 60px;
+    content: url('./img/切图/logo.png');
+
+}
+
+.shoubu .bangxin1a2 {
+    width: 400px;
+    height: 38px;
+    border: 1px solid #2b6e5a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* 圆角属性 */
+    border-radius: 19px;
+}
+
+.shuotu {
+    padding-left: 14px;
+}
+
+.shuonei {
+    padding-left: 19px;
+    border: 1px solid white;
+    border-radius: 4px;
+    outline: none;
+    width: 100%;
+    /* 圆角属性 */
+    border-left: 19px;
+}
+
+.shuoan {
+    width: 90px;
+    height: 38px;
+    background-color: #2b6e5a;
+    cursor: pointer;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    /* 圆角属性 */
+    border-radius: 19px;
+}
+
+.shoubu .bangxin1a3 {
+    width: 150px;
+    height: 40px;
+    /* background-color: aqua; */
+}
+
+.gouwuche {
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgb(0, 0, 0);
+    /* 圆角属性 */
+    border-radius: 19px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.shulian {
+    width: 20px;
+    height: 20px;
+    color: white;
+    background-color: red;
+    /* 圆形 */
+    border-radius: 50%;
+}
+
+/* 标题栏 */
+.biaotilan {
+    width: 100%;
+    height: 100%;
+}
+
+.bangxin2 {
+    width: 1920px;
+    height: 70px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fubangxin2 {
+    width: 504px;
+    height: 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dazhanshitu {
+    width: 100%;
+    /* margin: 0 auto; */
+    /* height: 100%; */
+    /* background-color: #2b6e5a; */
+}
+
+.lunbo {
+    width: 830px;
+    height: 57px;
+    border-radius: 0px;
+    margin: 0 auto;
+    
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /* background-color: #e53e3e; */
+}
+
+.shouden {
+    width: 90px;
+    height: 57px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gonjulan {
+    width: 100%;
+    height: 100%;
+}
+
+.bangxin11 {
+    width: 1920px;
+    height: 199px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gonjulan1 {
+    width: 1200px;
+    height: 132px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.fenlei {
+    margin-left: 20px;
+    height: 12px;
+    display: flex;
+
+}
+.fenlei div{
+    margin:0 20px;
+}
+.fenge {
+    margin-left: 20px;
+    height: 12px;
+    display: flex;
+
+}
+.fenge div{
+    margin:0 20px;
+}
+.panxu {
+    margin-left: 20px;
+    height: 12px;
+    display: flex;
+
+}
+.panxu div{
+    margin:0 20px;
+}
+/* 中图 */
+.xinpinshoufa {
+    width: 100%;
+    height: 100%;
+}
+
+.bangxin3 {
+    width: 1920px;
+    height: 104px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fubangxing3 {
+    width: 1163px;
+    height: 104px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.xinpinshoufatu {
+    width: 100%;
+    height: 100%;
+}
+
+.bangxin4 {
+    width: 1920px;
+    height: 439px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: blue; */
+}
+
+.anniutu {
+    width: 1300px;
+    height: 344px;
+    display: flex;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.but-l,
+.but-r {
+    width: 50px;
+    height: 50px;
+    background-color: #2B6E5A;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.small-image {
+    width: 30px;
+    /* 设置图片宽度为50像素 */
+    height: 30px;
+    /* 高度自动调整，保持图片的宽高比 */
+}
+
+.couch {
+    background: #f4f4f4;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.couch>img {
+    width: 240px;
+    height: 240px;
+}
+
+.couch h2 {
+    color: #333;
+}
+
+.bangxin4a1 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.price {
+    color: red;
+    font-weight: bold;
+}
+
+.price1 {
+    color: #666;
+}
+
+
+.container1 {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.furniture {
+    border-bottom: 1px solid #e1e1e1;
+    padding: 10px 0;
+}
+
+.furniture:last-child {
+    border-bottom: none;
+}
+
+.furniture h3 {
+    color: #333;
+    margin: 0;
+}
+
+.furniture p {
+    color: #666;
+    margin: 5px 0;
+}
+
+.price {
+    color: #e53e3e;
+    font-weight: bold;
+    margin: 0;
+}
+
+.rexiao {
+    width: 100%;
+    height: 100%;
+}
+
+.bangxin5 {
+    width: 1920px;
+    height: 104px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fubangxing5 {
+    width: 1163px;
+    height: 104px;
+    display: flex;
+    justify-content: center;
+}
+
+.renre {
+    width: 410px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 中绿 */
+.bg {
+    width: 100%;
+    height: 100%;
+    margin-top: 42px;
+}
+
+.bangxin6 {
+    width: 1920px;
+    height: 150px;
+    background-color: #2b6e5a;
+    border-radius: 0px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.jieshen {
+    width: 293px;
+    height: 25px;
+    font-family: PingFangSC-Medium;
+    font-size: 24px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 36px;
+    letter-spacing: 2px;
+    color: #ffffff;
+}
+
+.lijiqiangou {
+
+    width: 200px;
+    height: 48px;
+    background-color: #ffffff;
+    border-radius: 24px;
+}
+
+.wenben {
+    width: 200px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    /* 垂直居中 */
+    justify-content: center;
+    /* 水平居中 */
+}
+
+.fuhao {
+    width: 7px;
+    height: 12px;
+    background-color: #999999;
+}
+
+.gdcp1 {
+    width: 200px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.renre1 {
+    width: 200px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* 页脚 */
+.shonhuo {
+    width: 100%;
+    height: 100%;
+    padding-top: 13px;
+}
+
+.bangxin7 {
+    width: 1920px;
+    height: 182px;
+    background-color: #222222;
+    border-radius: 0px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.fubangxin7 {
+    width: 1163px;
+    height: 182px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wentu {
+    width: 120px;
+    height: 120px;
+    display: flex;
+    color: #ffffff;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.shuipin {
+    width: 100%;
+    height: 100%;
+}
+
+.bangxin8 {
+    width: 1920px;
+    height: 50px;
+    background-color: #222222;
+    border-radius: 0px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.fubangxin8 {
+    width: 1284px;
+    height: 4px;
+    margin: 0 auto;
+    background-color: #d2d2d2;
+}
+
+.yejioatu {
+    width: 100%;
+    height: 100%;
+}
+
+.bangxin9 {
+    width: 1920px;
+    height: 200px;
+    background-color: #222222;
+    border-radius: 0px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fubangxin9 {
+    width: 956px;
+    height: 151px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.sjkf {
+    width: 98px;
+    height: 151px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.sjkf a {
+    color: white;
+    text-decoration: none;
+}
+
+.sjkf a:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+}
+
+.bangxin10 {
+    width: 1920px;
+    height: 80px;
+    border-radius: 0px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+
+}
+
+.footer-copyright {
+    font-size: 0.8em;
+    color: white;
+    text-align: center;
+}
